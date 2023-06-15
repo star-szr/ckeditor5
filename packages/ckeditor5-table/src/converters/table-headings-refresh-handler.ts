@@ -56,7 +56,7 @@ export default function tableHeadingsRefreshHandler( model: Model, editing: Edit
 
 		const headingRows = table.getAttribute( 'headingRows' ) || 0;
 		const headingColumns = table.getAttribute( 'headingColumns' ) || 0;
-		const footerRows = table.getAttribute( 'footerRows' ) || 0;
+		const footerRows = table.getAttribute( 'footerRows' ) as number || 0;
 		const footerIndex = tableUtils.getRows( table ) - footerRows;
 
 		const tableWalker = new TableWalker( table );

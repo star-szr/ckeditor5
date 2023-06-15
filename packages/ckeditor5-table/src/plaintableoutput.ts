@@ -76,8 +76,8 @@ export default class PlainTableOutput extends Plugin {
  * @returns Created element.
  */
 function downcastTableElement( table: Element, { writer }: { writer: DowncastWriter }, tableUtils: TableUtils ) {
-	const headingRows = table.getAttribute( 'headingRows' ) || 0;
-	const footerRows = table.getAttribute( 'footerRows' ) || 0;
+	const headingRows = table.getAttribute( 'headingRows' ) as number || 0;
+	const footerRows = table.getAttribute( 'footerRows' ) as number || 0;
 	const footerIndex = tableUtils.getRows( table ) - footerRows;
 
 	// Table head rows slot.
