@@ -221,7 +221,7 @@ describe( 'TableStyleSupport', () => {
 			tbodyStyle.name,
 			tfootStyle.name,
 			trStyle.name,
-			thStyle.name
+			tdStyle.name
 		] );
 
 		command.execute( { styleName: 'Test tfoot style' } );
@@ -395,7 +395,7 @@ describe( 'TableStyleSupport', () => {
 			tableStyle.name,
 			tfootStyle.name,
 			trStyle.name,
-			thStyle.name
+			tdStyle.name
 		] );
 
 		command.execute( { styleName: 'Test tfoot style' } );
@@ -469,7 +469,7 @@ describe( 'TableStyleSupport', () => {
 		);
 	} );
 
-	it( 'should add class to th element when footer is selected', () => {
+	it( 'should add class to td element when footer is selected', () => {
 		setData( model,
 			'<table footerRows="1">' +
 				'<tableRow>' +
@@ -485,9 +485,9 @@ describe( 'TableStyleSupport', () => {
 			'</table>'
 		);
 
-		expect( command.enabledStyles ).to.deep.include( thStyle.name );
-		expect( command.enabledStyles ).to.not.deep.include( tdStyle.name );
-		command.execute( { styleName: 'Test th style' } );
+		expect( command.enabledStyles ).to.deep.include( tdStyle.name );
+		expect( command.enabledStyles ).to.not.deep.include( thStyle.name );
+		command.execute( { styleName: 'Test td style' } );
 
 		expect( getData( model, { withoutSelection: true } ) ).to.equal(
 			'<table footerRows="1">' +
@@ -497,7 +497,7 @@ describe( 'TableStyleSupport', () => {
 					'</tableCell>' +
 				'</tableRow>' +
 				'<tableRow>' +
-					'<tableCell htmlThAttributes="{"classes":["test-th-style"]}">' +
+					'<tableCell htmlTdAttributes="{"classes":["test-td-style"]}">' +
 						'<paragraph>bar</paragraph>' +
 					'</tableCell>' +
 				'</tableRow>' +
@@ -735,7 +735,7 @@ describe( 'TableStyleSupport', () => {
 		);
 	} );
 
-	it( 'should apply td style only to td elements even if other elements are selected (first selected element is a td)', () => {
+	it( 'should apply td style to footer cells even if other elements are selected', () => {
 		setData( model,
 			'<table footerRows="1">' +
 				'<tableRow>' +
@@ -773,7 +773,7 @@ describe( 'TableStyleSupport', () => {
 					'</tableCell>' +
 				'</tableRow>' +
 				'<tableRow>' +
-					'<tableCell>' +
+					'<tableCell htmlTdAttributes="{"classes":["test-td-style"]}">' +
 						'<paragraph>footer</paragraph>' +
 					'</tableCell>' +
 				'</tableRow>' +
@@ -817,7 +817,7 @@ describe( 'TableStyleSupport', () => {
 					'</tableCell>' +
 				'</tableRow>' +
 				'<tableRow>' +
-					'<tableCell htmlThAttributes="{"classes":["test-th-style"]}">' +
+					'<tableCell>' +
 						'<paragraph>footer</paragraph>' +
 					'</tableCell>' +
 				'</tableRow>' +

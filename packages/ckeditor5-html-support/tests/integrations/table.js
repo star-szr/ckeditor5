@@ -79,9 +79,9 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot data-tfoot="tfoot">' +
 						'<tr data-tr="tr">' +
-							'<th data-th="th">4</th>' +
-							'<th data-th="th">5</th>' +
-							'<th data-th="th">6</th>' +
+							'<td data-td="td">4</td>' +
+							'<td data-td="td">5</td>' +
+							'<td data-td="td">6</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -127,13 +127,13 @@ describe( 'TableElementSupport', () => {
 						'</tableCell>' +
 					'</tableRow>' +
 					'<tableRow htmlTrAttributes="(18)">' +
-						'<tableCell htmlThAttributes="(19)">' +
+						'<tableCell htmlTdAttributes="(19)">' +
 							'<paragraph>4</paragraph>' +
 						'</tableCell>' +
-						'<tableCell htmlThAttributes="(20)">' +
+						'<tableCell htmlTdAttributes="(20)">' +
 							'<paragraph>5</paragraph>' +
 						'</tableCell>' +
-						'<tableCell htmlThAttributes="(21)">' +
+						'<tableCell htmlTdAttributes="(21)">' +
 							'<paragraph>6</paragraph>' +
 						'</tableCell>' +
 					'</tableRow>' +
@@ -231,17 +231,17 @@ describe( 'TableElementSupport', () => {
 				},
 				19: {
 					attributes: {
-						'data-th': 'th'
+						'data-td': 'td'
 					}
 				},
 				20: {
 					attributes: {
-						'data-th': 'th'
+						'data-td': 'td'
 					}
 				},
 				21: {
 					attributes: {
-						'data-th': 'th'
+						'data-td': 'td'
 					}
 				}
 			}
@@ -280,9 +280,9 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot class="foobar">' +
 						'<tr class="foobar">' +
-							'<th class="foobar">4</th>' +
-							'<th class="foobar">5</th>' +
-							'<th class="foobar">6</th>' +
+							'<td class="foobar">4</td>' +
+							'<td class="foobar">5</td>' +
+							'<td class="foobar">6</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -328,13 +328,13 @@ describe( 'TableElementSupport', () => {
 						'</tableCell>' +
 					'</tableRow>' +
 					'<tableRow htmlTrAttributes="(18)">' +
-						'<tableCell htmlThAttributes="(19)">' +
+						'<tableCell htmlTdAttributes="(19)">' +
 							'<paragraph>4</paragraph>' +
 						'</tableCell>' +
-						'<tableCell htmlThAttributes="(20)">' +
+						'<tableCell htmlTdAttributes="(20)">' +
 							'<paragraph>5</paragraph>' +
 						'</tableCell>' +
-						'<tableCell htmlThAttributes="(21)">' +
+						'<tableCell htmlTdAttributes="(21)">' +
 							'<paragraph>6</paragraph>' +
 						'</tableCell>' +
 					'</tableRow>' +
@@ -380,9 +380,9 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot style="color:red;">' +
 						'<tr style="color:red;">' +
-							'<th style="color:red;">4</th>' +
-							'<th style="color:red;">5</th>' +
-							'<th style="color:red;">6</th>' +
+							'<td style="color:red;">4</td>' +
+							'<td style="color:red;">5</td>' +
+							'<td style="color:red;">6</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -428,13 +428,13 @@ describe( 'TableElementSupport', () => {
 						'</tableCell>' +
 					'</tableRow>' +
 					'<tableRow htmlTrAttributes="(18)">' +
-						'<tableCell htmlThAttributes="(19)">' +
+						'<tableCell htmlTdAttributes="(19)">' +
 							'<paragraph>4</paragraph>' +
 						'</tableCell>' +
-						'<tableCell htmlThAttributes="(20)">' +
+						'<tableCell htmlTdAttributes="(20)">' +
 							'<paragraph>5</paragraph>' +
 						'</tableCell>' +
-						'<tableCell htmlThAttributes="(21)">' +
+						'<tableCell htmlTdAttributes="(21)">' +
 							'<paragraph>6</paragraph>' +
 						'</tableCell>' +
 					'</tableRow>' +
@@ -473,7 +473,7 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot style="color:red;">' +
 						'<tr style="color:red;">' +
-							'<th style="color:red;">3</th>' +
+							'<td style="color:red;">3</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -524,7 +524,7 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot>' +
 						'<tr>' +
-							'<th>3</th>' +
+							'<td>3</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -553,7 +553,7 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot style="color:red;">' +
 						'<tr style="color:red;">' +
-							'<th style="color:red;">3</th>' +
+							'<td style="color:red;">3</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -604,7 +604,7 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot>' +
 						'<tr>' +
-							'<th>3</th>' +
+							'<td>3</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -633,7 +633,7 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot style="color:red;">' +
 						'<tr style="color:red;">' +
-							'<th style="color:red;">3</th>' +
+							'<td style="color:red;">3</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -684,7 +684,7 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot style="color:red;">' +
 						'<tr>' +
-							'<th>3</th>' +
+							'<td>3</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -792,9 +792,9 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot data-tfoot="tfoot">' +
 						'<tr data-tr="tr">' +
-							'<th data-th="th">4</th>' +
-							'<th data-th="th">5</th>' +
-							'<th data-th="th">6</th>' +
+							'<td data-td="td">4</td>' +
+							'<td data-td="td">5</td>' +
+							'<td data-td="td">6</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -876,9 +876,9 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot>' +
 						'<tr>' +
-							'<th>4</th>' +
-							'<th>5</th>' +
-							'<th>6</th>' +
+							'<td>4</td>' +
+							'<td>5</td>' +
+							'<td>6</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -921,9 +921,9 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot class="foobar">' +
 						'<tr class="foobar">' +
-							'<th class="foobar">4</th>' +
-							'<th class="foobar">5</th>' +
-							'<th class="foobar">6</th>' +
+							'<td class="foobar">4</td>' +
+							'<td class="foobar">5</td>' +
+							'<td class="foobar">6</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -1005,9 +1005,9 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot>' +
 						'<tr>' +
-							'<th>4</th>' +
-							'<th>5</th>' +
-							'<th>6</th>' +
+							'<td>4</td>' +
+							'<td>5</td>' +
+							'<td>6</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -1036,7 +1036,7 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot class="foobar foo-tfoot">' +
 						'<tr class="foobar foo-tr">' +
-							'<th class="foobar foo-th">a</th>' +
+							'<td class="foobar foo-td">a</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -1080,7 +1080,7 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot class="foobar added-tfoot">' +
 						'<tr class="foobar foo-tr">' +
-							'<th class="foobar foo-th">a</th>' +
+							'<td class="foobar foo-td">a</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -1109,7 +1109,7 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot class="foobar">' +
 						'<tr class="foobar">' +
-							'<th class="foobar">c</th>' +
+							'<td class="foobar">c</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -1145,7 +1145,7 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot>' +
 						'<tr class="foobar">' +
-							'<th class="foobar">c</th>' +
+							'<td class="foobar">c</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -1188,9 +1188,9 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot style="color:red;">' +
 						'<tr style="color:red;">' +
-							'<th style="color:red;">4</th>' +
-							'<th style="color:red;">5</th>' +
-							'<th style="color:red;">6</th>' +
+							'<td style="color:red;">4</td>' +
+							'<td style="color:red;">5</td>' +
+							'<td style="color:red;">6</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -1272,9 +1272,9 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot>' +
 						'<tr>' +
-							'<th>4</th>' +
-							'<th>5</th>' +
-							'<th>6</th>' +
+							'<td>4</td>' +
+							'<td>5</td>' +
+							'<td>6</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -1465,9 +1465,9 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot data-foo="foo">' +
 						'<tr>' +
-							'<th>4</th>' +
-							'<th>5</th>' +
-							'<th>6</th>' +
+							'<td>4</td>' +
+							'<td>5</td>' +
+							'<td>6</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -1493,9 +1493,9 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot>' +
 						'<tr>' +
-							'<th>4</th>' +
-							'<th>5</th>' +
-							'<th>6</th>' +
+							'<td>4</td>' +
+							'<td>5</td>' +
+							'<td>6</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -1537,7 +1537,7 @@ describe( 'TableElementSupport', () => {
 				'</tbody>' +
 				'<tfoot align="right" dir="ltr" lang="en" valign="bottom">' +
 					'<tr>' +
-						'<th>Bar</th>' +
+						'<td>Bar</td>' +
 					'</tr>' +
 				'</tfoot>' +
 			'</table>'
@@ -1558,7 +1558,7 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot align="right" dir="ltr" lang="en" valign="bottom">' +
 						'<tr>' +
-							'<th>Bar</th>' +
+							'<td>Bar</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -2023,7 +2023,7 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot data-bar="foot">' +
 						'<tr>' +
-							'<th>2</th>' +
+							'<td>2</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -2087,7 +2087,7 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot data-bar="foot">' +
 						'<tr>' +
-							'<th>2</th>' +
+							'<td>2</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -2155,7 +2155,7 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot data-baz="foot">' +
 						'<tr>' +
-							'<th>3</th>' +
+							'<td>3</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -2230,7 +2230,7 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot data-bar="foot">' +
 						'<tr>' +
-							'<th>2</th>' +
+							'<td>2</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -2293,7 +2293,7 @@ describe( 'TableElementSupport', () => {
 					'</tbody>' +
 					'<tfoot data-bar="foot">' +
 						'<tr>' +
-							'<th>2</th>' +
+							'<td>2</td>' +
 						'</tr>' +
 					'</tfoot>' +
 				'</table>' +
@@ -2645,9 +2645,9 @@ describe( 'TableElementSupport', () => {
 						'</tbody>' +
 						'<tfoot class="allow disallow invalid" invalid-attribute="invalid" data-allow="allow" data-disallow="disallow" style="color:red;background:blue;width:10px;">' +
 							'<tr class="allow disallow invalid" invalid-attribute="invalid" data-allow="allow" data-disallow="disallow" style="color:red;background:blue;width:10px;">' +
-								'<th class="allow disallow invalid" invalid-attribute="invalid" data-allow="allow" data-disallow="disallow" style="color:red;background:blue;width:10px;">4</th>' +
-								'<th class="allow disallow invalid" invalid-attribute="invalid" data-allow="allow" data-disallow="disallow" style="color:red;background:blue;width:10px;">5</th>' +
-								'<th class="allow disallow invalid" invalid-attribute="invalid" data-allow="allow" data-disallow="disallow" style="color:red;background:blue;width:10px;">6</th>' +
+								'<td class="allow disallow invalid" invalid-attribute="invalid" data-allow="allow" data-disallow="disallow" style="color:red;background:blue;widtd:10px;">4</td>' +
+								'<td class="allow disallow invalid" invalid-attribute="invalid" data-allow="allow" data-disallow="disallow" style="color:red;background:blue;widtd:10px;">5</td>' +
+								'<td class="allow disallow invalid" invalid-attribute="invalid" data-allow="allow" data-disallow="disallow" style="color:red;background:blue;widtd:10px;">6</td>' +
 							'</tr>' +
 						'</tfoot>' +
 					'</table>' +
@@ -2691,13 +2691,13 @@ describe( 'TableElementSupport', () => {
 							'</tableCell>' +
 						'</tableRow>' +
 						'<tableRow htmlTrAttributes="(18)">' +
-							'<tableCell htmlThAttributes="(19)">' +
+							'<tableCell htmlTdAttributes="(19)">' +
 								'<paragraph>4</paragraph>' +
 							'</tableCell>' +
-							'<tableCell htmlThAttributes="(20)">' +
+							'<tableCell htmlTdAttributes="(20)">' +
 								'<paragraph>5</paragraph>' +
 							'</tableCell>' +
-							'<tableCell htmlThAttributes="(21)">' +
+							'<tableCell htmlTdAttributes="(21)">' +
 								'<paragraph>6</paragraph>' +
 							'</tableCell>' +
 						'</tableRow>' +
@@ -2740,9 +2740,9 @@ describe( 'TableElementSupport', () => {
 						'</tbody>' +
 						'<tfoot class="allow" style="color:red;" data-allow="allow">' +
 							'<tr class="allow" style="color:red;" data-allow="allow">' +
-								'<th class="allow" style="color:red;" data-allow="allow">4</th>' +
-								'<th class="allow" style="color:red;" data-allow="allow">5</th>' +
-								'<th class="allow" style="color:red;" data-allow="allow">6</th>' +
+								'<td class="allow" style="color:red;" data-allow="allow">4</td>' +
+								'<td class="allow" style="color:red;" data-allow="allow">5</td>' +
+								'<td class="allow" style="color:red;" data-allow="allow">6</td>' +
 							'</tr>' +
 						'</tfoot>' +
 					'</table>' +
